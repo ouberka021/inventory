@@ -47,8 +47,11 @@ https://inventory2-pro.herokuapp.com/
 ## Demo Project
 
 # Home page
+![](images/add-cart.png)
 # add new product
+![](images/new-pro.png)
 # List of All products
+![](images/product-list.png)
     
 ## Support
 ```bash
