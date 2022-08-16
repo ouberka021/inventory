@@ -2,8 +2,9 @@ const React = require('react');
 import { BiCommentAdd } from 'react-icons/bi'
 import { MdProductionQuantityLimits } from 'react-icons/md'
 import { FcHome } from 'react-icons/fc';
-const Product = require('../models/product');
+const Product = require('../models/product.js');
 class Edit extends React.Component {
+
     render() {
         const product = this.props.product;
         
@@ -32,11 +33,11 @@ class Edit extends React.Component {
                             </a>
                        </li>
                        <li class="nav-item  no-arrow mx-1">
-                            <a class="nav-link " href="product/new" > <BiCommentAdd/>  Add New Product
+                            <a class="nav-link " href="/product/new" > <BiCommentAdd/>  Add New Product
                             </a>
                        </li>
                        <li class="nav-item  no-arrow mx-1">
-                            <a class="nav-link " href="product" >
+                            <a class="nav-link " href="/product" >
                             < MdProductionQuantityLimits />  All products  
                             </a>
                        </li>
@@ -53,21 +54,26 @@ class Edit extends React.Component {
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-{/*                               
-                                             {Object.values(product).map((prod, id) => {
-                                            return (  */}
-                                    <thead>
+                            
+                                             {Object.values(product).map((prod) => {
+
+                                                return (  
+                                 <thead>
 
                                         <tr>
                                             <th>
-                                           
+
+
+
+
+
                                               
     <form action={`/product/${product.id}?_method=PUT`} method="POST">
 
                                   
-  <div  class="form-group">
+  <div  key={prod.id} class="form-group">
     <label >Product Name</label>
-    <input type="text" class="form-control"  name='name'  />
+    <input type="text" class="form-control" value={prod.name}  name='name'  />
   </div>
   <div class="form-group">
     <label>Price</label>
@@ -118,6 +124,7 @@ class Edit extends React.Component {
   <input type="submit" name="" class="btn btn-primary " value="Submit Entry"/></form> </th>
                                         </tr>
                                     </thead>
+                                     )})}
                                 </table>
                             </div>
                         </div>

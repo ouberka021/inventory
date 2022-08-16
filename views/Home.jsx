@@ -69,7 +69,7 @@ class Home extends React.Component {
       )}
 
    <div class="product-info">
-    <div class="detail-product">{prod.desc.slice(0, 150)}</div>
+    <div class="detail-product">{prod.desc.slice(0, 142)} ...</div>
 <div id="auther">
 <div class="price">${prod.price}</div>
 <div class="config-product">
