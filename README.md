@@ -44,7 +44,11 @@ https://inventory2-pro.herokuapp.com/
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0"
 ```
+## Demo Project
 
+# Home page
+# add new product
+# List of All products
     
 ## Support
 ```bash
