@@ -17,7 +17,7 @@ https://github.com/ouberka021/inventory.git
 ```
 Heroku link
 ```bash
-https://inventory-pro2.herokuapp.com//
+https://inventory-tb.herokuapp.com
 ``` 
 
 ### Install my-project using ReactJS framework.
