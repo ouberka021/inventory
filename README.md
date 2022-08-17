@@ -23,7 +23,7 @@ https://inventory2-pro.herokuapp.com/
 ### Install my-project using ReactJS framework.
 
 ```bash
-  npn init
+  npm init
   npm install express
   npm i dotenv react react-icons method-override
   npm i mongoose 
