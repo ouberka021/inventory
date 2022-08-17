@@ -56,7 +56,7 @@ https://inventory2-pro.herokuapp.com/
 
 ## Video link
 
-[<img src="images/inv.jpeg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
+[<img src="images/inv.jpeg" width="50%">](https://www.youtube.com/watch?v=cajkz7BmzdY"")
     
 ## Support
 ```bash
