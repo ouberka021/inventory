@@ -44,6 +44,15 @@ https://inventory2-pro.herokuapp.com/
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0"
 ```
+## Application demo
+
+### Home page
+
+![](images/add-cart.png)
+### List Product
+![](images/product-list.png)
+### New product
+![](images/new-pro.png)
 
     
 ## Support
