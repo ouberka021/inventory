@@ -24,7 +24,7 @@ class Home extends React.Component {
   <div id="wrapper">
  <div id="content-wrapper" class="d-flex flex-column">
  <div id="content">
- <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+ <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow">
  <div class="logo">SYS2M</div>
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item  no-arrow mx-1">

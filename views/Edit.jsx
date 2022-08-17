@@ -22,9 +22,13 @@ class Edit extends React.Component {
 </head>
 <body>
 
+
+
+
+
  <div id="content-wrapper" class="d-flex flex-column">
     <div id="content">
-    <nav class="navbar navbar-expand topbar mb-4 static-top shadow">
+    <nav class="navbar navbar-expand topbar bg-dark  mb-4 static-top shadow">
         <div class="logo">SYS2M</div>
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item  no-arrow mx-1">
@@ -55,49 +59,60 @@ class Edit extends React.Component {
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             
-                                             {Object.values(product).map((prod) => {
-
-                                                return (  
+                                             
                                  <thead>
 
                                         <tr>
                                             <th>
 
-
-
-
-
-                                              
     <form action={`/product/${product.id}?_method=PUT`} method="POST">
 
                                   
-  <div  key={prod.id} class="form-group">
+  <div  class="form-group">
     <label >Product Name</label>
-    <input type="text" class="form-control" value={prod.name}  name='name'  />
+    <input type="text" class="form-control" value={product.name}  name='name'  />
   </div>
   <div class="form-group">
     <label>Price</label>
-    <input type="text" class="form-control" name='price'  />
+    <input type="text" class="form-control" value={product.price}  name='price'  />
+  </div>
+  <div class="form-group-2">
+    
+    <label >Confeguration</label>
+   
+   <table class="config">
+    <tr>
+    <th> <select name='system' value={product.system}  class="form-control-sm" >
+      <option>Mac OS</option>
+      <option>Windows</option>
+      <option>Linux</option>
+    </select></th>
+   <th> <input name='display' value={product.display}  class="form-control-sm" /></th>
+   <th> <input name='hdd' class="form-control-sm"  value={product.hdd} /></th>
+   <th><input name='dimm' class="form-control-sm"  value={product.dimm} /></th>
+   </tr>
+   </table>
+   
   </div>
   <div class="form-group">
     <label >Product Status</label>
-    <select name='status' class="form-control" >
+    <select name='status' value={product.status}  class="form-control" >
       <option>Active</option>
       <option>Sold</option>
     </select>
   </div>
   <div class="form-group">
     <label >Quantity </label>
-    <input type="text" class="form-control" name="qty"  />
+    <input type="text" class="form-control" value={product.qty}  name="qty"  />
   </div>
   <div class="form-group">
     <label >Model </label>
-    <input type="text"  name='model' class="form-control"  />
+    <input type="text"  name='model' value={product.model}  class="form-control"  />
   </div>
   <div class="form-group">
 
     <label >Category</label>
-    <select name='category' class="form-control" >
+    <select name='category' value={product.category}  class="form-control" >
     <option>TV </option>
     <option>Home Theater</option>
     <option>Computers</option>
@@ -116,15 +131,15 @@ class Edit extends React.Component {
   
   <div class="form-group">
     <label >Description</label>
-    <textarea name="desc" id="" class="form-control" cols="30" rows="10"></textarea>
+    <textarea name="desc" id="" class="form-control" value={product.desc}  cols="30" rows="10"></textarea>
   </div>
   <div class="form-group">
-   <input type="text" hidden class="form-control " name='img'   placeholder="Enter image" />
+   <input type="text" hidden class="form-control " name='img' value={product.img}    placeholder="Enter image" />
   </div>
   <input type="submit" name="" class="btn btn-primary " value="Submit Entry"/></form> </th>
                                         </tr>
                                     </thead>
-                                     )})}
+                                  
                                 </table>
                             </div>
                         </div>

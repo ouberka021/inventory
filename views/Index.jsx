@@ -28,7 +28,7 @@ class Index extends React.Component {
 <div id="wrapper">
  <div id="content-wrapper" class="d-flex flex-column">
     <div id="content">
-    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <nav class="navbar navbar-expand navbar-light bg-dark  topbar mb-4 static-top shadow">
         <div class="logo">SYS2M</div>
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item  no-arrow mx-1">
@@ -50,7 +50,7 @@ class Index extends React.Component {
                  <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">List of All products</h6>
-                            <div class="add" ><a href={`/product/new`} class="btn btn-danger-add " type="submit" >< GoDiffAdded /></a></div>
+                            <div class="add" ><a href={`/product/new`} class="btn btn-danger-add " type="submit" > Add New  < GoDiffAdded /></a></div>
                             
                         </div>
                         <div class="card-body">
